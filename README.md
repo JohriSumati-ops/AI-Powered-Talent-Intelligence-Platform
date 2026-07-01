@@ -1,33 +1,37 @@
-# Talent Intelligence Engine  
-### AI-Powered Candidate Ranking Beyond Keyword Matching
+# Talent Intelligence Engine
+## AI-Powered Candidate Ranking Beyond Keyword Matching
 
-> Recruiters go through hundreds of profiles and still miss great candidates—not because talent isn’t there, but because traditional ATS systems rely too heavily on keyword matching.
+> Hiring is broken. We built intelligence for it.
 
-Talent Intelligence Engine is an AI-powered recruitment system that evaluates candidates the way a strong recruiter would: by understanding **skills, experience, career growth, behavioral signals, and hidden potential**.
+Recruiters review hundreds of profiles and still miss exceptional candidates—not because talent isn’t there, but because traditional Applicant Tracking Systems (ATS) rely heavily on keyword matching.
 
-Instead of asking *“Does this resume contain the right keywords?”*, this system asks:
+A great recruiter doesn’t evaluate candidates by keywords alone.
 
-- Is this candidate genuinely qualified?
-- Does their career trajectory align with the role?
-- Are they likely to succeed long-term?
-- What strengths and risks should recruiters know?
+They assess:
+- Skills
+- Experience
+- Career growth
+- Behavioral signals
+- Hidden potential
+
+Talent Intelligence Engine replicates this recruiter intelligence using AI.
 
 ---
 
 # Problem Statement
 
-Traditional hiring pipelines are broken.
+Traditional hiring systems fail because they:
 
-Most ATS systems:
-- Over-prioritize keyword matches
-- Ignore career progression
-- Miss behavioral indicators
-- Fail to identify hidden high-potential candidates
+- Over-prioritize keyword matching  
+- Ignore career trajectory  
+- Miss behavioral indicators  
+- Fail to identify high-potential candidates  
 
-This results in:
-- Great candidates being filtered out
-- Poor shortlist quality
-- High recruiter workload
+As a result:
+
+- Strong candidates are filtered out  
+- Recruiters spend more time manually screening  
+- Shortlist quality decreases  
 
 We built Talent Intelligence Engine to solve this.
 
@@ -35,29 +39,37 @@ We built Talent Intelligence Engine to solve this.
 
 # Solution Overview
 
-Talent Intelligence Engine simulates how a skilled recruiter evaluates talent.
+Talent Intelligence Engine evaluates candidates the way an experienced recruiter would.
 
-The system:
+Instead of asking:
 
-1. Parses and understands the Job Description
-2. Evaluates each candidate across multiple dimensions
-3. Scores current fit + future potential
-4. Produces an explainable ranked shortlist
-5. Enables recruiter interaction via AI chat
+> Does this resume contain the right keywords?
+
+It asks:
+
+- Is this candidate genuinely qualified?
+- Does their experience align with the role?
+- Is their career growth strong?
+- Do they show behavioral signals of long-term success?
+- What hidden strengths or risks should recruiters know?
 
 ---
 
-# Key Features
+# Core Capabilities
 
-## 1. Intelligent Job Description Parsing
-Extracts and understands:
+## 1) Intelligent Job Description Parsing
+
+The system understands hiring requirements from raw job descriptions.
+
+Extracts:
 - Role
-- Required skills
-- Preferred skills
-- Experience expectations
-- Behavioral expectations
+- Required Skills
+- Preferred Skills
+- Experience Threshold
+- Behavioral Expectations
 
-Example:
+### Example Output
+
 ```json
 {
   "role": "Machine Learning Engineer",
@@ -67,60 +79,33 @@ Example:
   "behavior_traits": ["ownership mindset"]
 }
 ```
-# UI Preview
-
-## Dashboard
-Central control panel for JD parsing, candidate ranking, and recruiter analysis.
-
-![Dashboard](screenshots/landing_page.png)
 
 ---
 
-## Job Description Parser
-Parses job descriptions into structured hiring signals including skills, experience, and behavioral expectations.
+## 2) Multi-Dimensional Candidate Ranking
 
-![JD Parser](screenshots/job_parser.png)
-
----
-
-## Candidate Ranking
-Ranks candidates using multi-dimensional scoring across skills, experience, trajectory, and potential.
-
-![Ranking](screenshots/ranking_page.png)
-
----
-
-## Candidate Analysis
-Detailed explainability engine showing strengths, risks, and recommendation rationale.
-
-![Analysis](screenshots/recruiter_analysis.jpg)
-
----
-
-## 2. Multi-Dimensional Candidate Ranking
-
-Each candidate is scored across 5 dimensions:
+Each candidate is scored across 5 major dimensions.
 
 ### Skill Match
-How closely candidate skills align with JD requirements.
+How well candidate skills align with job requirements.
 
 ### Experience Relevance
-Measures role relevance and years of experience.
+Relevance of past roles and years of experience.
 
 ### Career Trajectory
-Evaluates progression and growth patterns.
+Career progression and growth pattern.
 
 ### Behavioral Signals
-Analyzes certifications, hackathons, GitHub activity, learning consistency.
+Certifications, GitHub activity, hackathons, learning consistency.
 
 ### Hidden Potential
-Identifies strong candidates who may not match traditional filters.
+Identifies strong non-obvious candidates.
 
 ---
 
-## 3. Hybrid AI Scoring Engine
+# Hybrid Scoring Engine
 
-Final score combines:
+Final ranking combines multiple dimensions.
 
 ```text
 Final Score =
@@ -131,20 +116,21 @@ Behavior Score +
 Potential Score
 ```
 
-This enables more human-like ranking.
+This creates rankings closer to human recruiter reasoning.
 
 ---
 
-## 4. Explainable AI Recommendations
+## 3) Explainable AI Recommendations
 
-Every ranked candidate includes:
+Every candidate includes:
 
-- Strengths
-- Risks
-- Detailed explanations
-- Final recommendation
+- Final Score  
+- Strengths  
+- Risks  
+- Recommendation  
+- Full AI Explanation  
 
-Example:
+### Example
 
 ```json
 {
@@ -159,45 +145,75 @@ Example:
 }
 ```
 
-This makes recruiter decisions more trustworthy.
-
 ---
 
-## 5. Semantic Retrieval (FAISS)
+## 4) Semantic Candidate Retrieval (FAISS)
 
-Supports intelligent candidate retrieval using embeddings.
-
-Enables:
-- Semantic candidate search
-- Faster recruiter discovery
-- Better shortlist quality
+Built with vector search for intelligent candidate discovery.
 
 Example queries:
-- "Strong backend engineers with AI exposure"
-- "Candidates with leadership potential"
+- Strong backend engineers with AI exposure
+- Candidates with leadership potential
+- Top profiles with strong future growth
+
+Enables:
+- Faster discovery  
+- Better shortlists  
+- Semantic search beyond keywords  
 
 ---
 
-## 6. AI Recruiter Chat
+## 5) AI Recruiter Assistant
 
-Interactive recruiter assistant for deeper analysis.
+Interactive recruiter intelligence layer.
 
 Examples:
 - Why is Candidate A ranked higher?
 - Who has strongest future potential?
-- Compare top 3 candidates
+- Compare top candidates
+- Explain ranking decisions
 
 ---
 
-## 7. Candidate Comparison Engine
+## 6) Candidate Comparison Engine
 
-Compare candidates head-to-head across dimensions:
-- Skills
-- Experience
-- Potential
-- Recommendation
+Compare candidates head-to-head across:
+- Skill Match  
+- Experience  
+- Potential  
+- Recommendation  
 
-This improves final hiring decisions.
+Supports faster final hiring decisions.
+
+---
+
+# UI Preview
+
+## Dashboard
+Central control panel for recruiter workflow.
+
+![Dashboard](screenshots/landing_page.png)
+
+---
+
+## Job Description Parser
+Parses job descriptions into structured hiring signals.
+
+![JD Parser](screenshots/job_parser.png)
+
+---
+
+## Candidate Ranking
+AI-powered candidate ranking engine.
+
+![Ranking](screenshots/ranking_page.png)
+
+---
+
+## Candidate Analysis
+Detailed explainability engine.
+
+![Analysis](screenshots/recruiter_analysis.jpg)
 
 ---
 
@@ -245,9 +261,9 @@ This improves final hiring decisions.
 
 ## AI / ML
 - LLM-based reasoning
+- Hybrid ranking models
 - Semantic retrieval
 - FAISS
-- Hybrid scoring models
 
 ## Frontend
 - React
@@ -268,6 +284,7 @@ talent-intelligence-engine/
 │
 ├── competition/
 ├── data/
+├── screenshots/
 ├── requirements.txt
 ├── main.py
 └── README.md
@@ -277,36 +294,48 @@ talent-intelligence-engine/
 
 # API Endpoints
 
-## JD Parsing
-`POST /jd/parse-jd`
+### Job Description Parsing
+```http
+POST /jd/parse-jd
+```
 
-## Candidate Ranking
-`POST /ranking/rank`
+### Candidate Ranking
+```http
+POST /ranking/rank
+```
 
-## Semantic Retrieval
-`POST /retrieval/retrieve`
+### Semantic Retrieval
+```http
+POST /retrieval/retrieve
+```
 
-## Recruiter Chat
-`POST /chat/chat`
+### Recruiter Chat
+```http
+POST /chat/chat
+```
 
-## Candidate Comparison
-`POST /compare/compare`
+### Candidate Comparison
+```http
+POST /compare/compare
+```
 
 ---
 
-# Results
+# Key Results
 
-The system successfully:
-- Parses job descriptions intelligently
-- Evaluates candidates across multiple dimensions
-- Produces explainable rankings
-- Improves recruiter decision quality
+Talent Intelligence Engine successfully:
 
-Core outcomes:
-- Better candidate discovery
-- Better shortlist quality
-- Lower recruiter effort
-- More intelligent hiring
+✅ Parses job descriptions intelligently  
+✅ Evaluates candidates across multiple dimensions  
+✅ Produces explainable rankings  
+✅ Enables semantic recruiter search  
+✅ Improves shortlist quality  
+
+### Core Impact
+- Better candidate discovery  
+- Higher-quality shortlists  
+- Reduced recruiter effort  
+- Smarter hiring decisions  
 
 ---
 
@@ -314,11 +343,16 @@ Core outcomes:
 
 Hiring is one of the highest-impact decisions any organization makes.
 
-Yet most hiring systems still operate on outdated filtering logic.
+Yet most recruitment systems still rely on outdated filtering.
 
-Talent Intelligence Engine rethinks recruitment by introducing intelligence, explainability, and human-like reasoning into candidate evaluation.
+Talent Intelligence Engine introduces:
+- Intelligence  
+- Explainability  
+- Human-like reasoning  
 
-This is not just a resume filter.
+into candidate evaluation.
+
+This is not just resume screening.
 
 This is AI-assisted hiring intelligence.
 
@@ -326,27 +360,28 @@ This is AI-assisted hiring intelligence.
 
 # Future Improvements
 
-- Fine-tuned ranking models
-- Interview intelligence scoring
-- Bias reduction mechanisms
-- Resume embeddings at scale
-- Production deployment
+- Fine-tuned ranking models  
+- Bias reduction mechanisms  
+- Interview intelligence scoring  
+- Resume embeddings at scale  
+- Production deployment  
 
 ---
 
 # Submission Assets
 
-- Source Code
-- PPT / Architecture Deck
-- Ranked Output File
+- GitHub Repository  
+- PPT / Architecture Deck  
+- Ranked Output File  
 
 ---
 
 # Team Vision
 
-We believe hiring should be smarter.
+> The best candidates are not always the loudest on paper.  
+> Many are hidden in plain sight.
 
-The best candidates are not always the loudest on paper.  
-They are often hidden in plain sight.
+We built Talent Intelligence Engine to help recruiters find them.
 
-Talent Intelligence Engine helps recruiters find them.
+Hiring should be smarter.  
+We’re building the future of recruitment intelligence.
