@@ -79,7 +79,7 @@ Central control panel for JD parsing, candidate ranking, and recruiter analysis.
 ## Job Description Parser
 Parses job descriptions into structured hiring signals including skills, experience, and behavioral expectations.
 
-![JD Parser](screenshots/jd_parser.png)
+![JD Parser](screenshots/job_parser.png)
 
 ---
 
@@ -94,6 +94,7 @@ Ranks candidates using multi-dimensional scoring across skills, experience, traj
 Detailed explainability engine showing strengths, risks, and recommendation rationale.
 
 ![Analysis](screenshots/recruiter_analysis.png)
+
 ---
 
 ## 2. Multi-Dimensional Candidate Ranking
