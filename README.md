@@ -93,7 +93,7 @@ Ranks candidates using multi-dimensional scoring across skills, experience, traj
 ## Candidate Analysis
 Detailed explainability engine showing strengths, risks, and recommendation rationale.
 
-![Analysis](screenshots/recruiter_analysis.png)
+![Analysis](screenshots/recruiter_analysis.jpg)
 
 ---
 
