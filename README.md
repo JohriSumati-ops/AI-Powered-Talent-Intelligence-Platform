@@ -187,35 +187,31 @@ Supports faster final hiring decisions.
 
 ---
 
-# UI Preview
+## Product Walkthrough
 
-## Dashboard
-Central control panel for recruiter workflow.
+### Dashboard
 
-![Dashboard](screenshots/landing_page.png)
+(screenshots/landing_page.png)
 
----
+### JD Parsing
 
-## Job Description Parser
-Parses job descriptions into structured hiring signals.
+(image)
 
-![JD Parser](screenshots/job_parser.png)
+### Candidate Ranking
 
----
+(image)
 
-## Candidate Ranking
-AI-powered candidate ranking engine.
+### Candidate Comparison
 
-![Ranking](screenshots/ranking_page.png)
+(image)
 
----
+### Recruiter Copilot
 
-## Candidate Analysis
-Detailed explainability engine.
+(image)
 
-![Analysis](screenshots/recruiter_analysis.jpg)
+### Explainable AI
 
----
+(image)
 
 # System Architecture
 
