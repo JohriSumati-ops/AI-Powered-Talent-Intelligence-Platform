@@ -191,27 +191,33 @@ Supports faster final hiring decisions.
 
 ### Dashboard
 
-(screenshots/landing_page.png)
+<img width="1917" height="905" alt="landing_page" src="https://github.com/user-attachments/assets/79ecfc69-1058-436d-a2fc-b492689ef3f3" />
+
 
 ### JD Parsing
 
-(image)
+<img width="1897" height="895" alt="job_parser" src="https://github.com/user-attachments/assets/9b9aadb5-f1e8-48bf-91a0-0ce1113272c2" />
+
 
 ### Candidate Ranking
 
-(image)
+<img width="1917" height="926" alt="ranking_page" src="https://github.com/user-attachments/assets/858723bb-3de3-48fd-aa2a-6d181bea4c7d" />
+
 
 ### Candidate Comparison
 
-(image)
+<img width="1917" height="906" alt="comapre" src="https://github.com/user-attachments/assets/d9616562-3beb-4907-8c87-712897e98e15" />
+
 
 ### Recruiter Copilot
 
-(image)
+<img width="1912" height="917" alt="chatbot" src="https://github.com/user-attachments/assets/fbf49200-f0f8-41c9-ac6e-3abe322e27cb" />
+
 
 ### Explainable AI
 
-(image)
+<img width="1917" height="911" alt="reasoning" src="https://github.com/user-attachments/assets/f9ccd7c5-aa67-471a-8930-b402b4a90aa3" />
+
 
 # System Architecture
 
