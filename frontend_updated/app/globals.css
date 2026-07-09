@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Design tokens — Talent Intelligence Engine
+  Palette: black / white / slate base, indigo primary, emerald for positive
+  signal, amber for caution, rose for risk. Dark theme is the default surface;
+  light theme is a full alternate token set, not just an inverted filter.
+*/
+
+:root {
+  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+.dark {
+  --background: 240 10% 6%;
+  --foreground: 210 20% 96%;
+
+  --surface: 240 9% 10%;
+  --surface-raised: 240 8% 13%;
+  --surface-hover: 240 8% 16%;
+
+  --border: 240 6% 20%;
+
+  --muted: 240 6% 16%;
+  --muted-foreground: 240 5% 64%;
+
+  --primary: 243 75% 65%;
+  --primary-foreground: 0 0% 100%;
+  --primary-muted: 243 60% 20%;
+
+  --emerald: 158 64% 45%;
+  --emerald-muted: 158 45% 16%;
+
+  --amber: 38 92% 55%;
+  --amber-muted: 38 60% 16%;
+
+  --rose: 350 80% 62%;
+  --rose-muted: 350 55% 18%;
+}
+
+.light {
+  --background: 220 20% 98%;
+  --foreground: 240 10% 12%;
+
+  --surface: 0 0% 100%;
+  --surface-raised: 220 20% 100%;
+  --surface-hover: 220 20% 96%;
+
+  --border: 220 14% 90%;
+
+  --muted: 220 20% 95%;
+  --muted-foreground: 220 9% 45%;
+
+  --primary: 243 70% 56%;
+  --primary-foreground: 0 0% 100%;
+  --primary-muted: 243 70% 94%;
+
+  --emerald: 158 60% 38%;
+  --emerald-muted: 158 55% 92%;
+
+  --amber: 38 85% 48%;
+  --amber-muted: 38 90% 92%;
+
+  --rose: 350 72% 52%;
+  --rose-muted: 350 80% 94%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html {
+  color-scheme: dark;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: var(--font-sans);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+::selection {
+  background: hsl(var(--primary) / 0.3);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.4);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Focus visibility */
+:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Skeleton shimmer */
+.skeleton {
+  position: relative;
+  overflow: hidden;
+  background: hsl(var(--muted));
+}
+.skeleton::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    hsl(var(--surface-hover) / 0.6),
+    transparent
+  );
+  animation: shimmer 1.6s infinite;
+  transform: translateX(-100%);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    120deg,
+    hsl(var(--primary)),
+    hsl(var(--emerald))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.mesh-glow {
+  background:
+    radial-gradient(
+      600px circle at 15% 20%,
+      hsl(var(--primary) / 0.16),
+      transparent 60%
+    ),
+    radial-gradient(
+      500px circle at 85% 0%,
+      hsl(var(--emerald) / 0.12),
+      transparent 55%
+    );
+}
